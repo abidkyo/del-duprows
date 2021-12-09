@@ -50,7 +50,7 @@ if verbose:
 
 # Apply set function to all columns except the groupbyCol column.
 # Set prevent duplicates values!! :)
-df_output = df.groupby(groupbyCol).agg("first").reset_index()
+df_output = df.groupby(groupbyCol).first().reset_index()
 if verbose:
     print("Data without duplicate rows")
     print(df_output)
