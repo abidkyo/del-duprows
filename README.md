@@ -1,15 +1,15 @@
-# del_dups_row
+# Delete duplicate rows
 
 ## Description
 
-Script to delete duplicates rows by the same values in a column.
+Script to delete duplicate rows by the same values in a column.
 
 - Group the data and apply "first" function.
 
 ## Usage
 
 ```bash
-python3 del_dups_row.py -v -f data.xlsx -g "First Name" -o output.xlsx
+python3 del-duprows.py -v -f data.xlsx -g "First Name" -o output.xlsx
 ```
 
 ## Dependencies
@@ -24,9 +24,9 @@ python3 -m pip install pandas openpyxl
 ## Help Message
 
 ```bash
-usage: del_dups_row.py [-h] [-v] -f FILE [-s SHEET] [-n NROWS] -g GROUPBY -o OUTPUT
+usage: del-duprows.py [-h] [-v] -f FILE [-s SHEET] [-n NROWS] -g GROUPBY -o OUTPUT
 
-Delete duplicates rows by the same values in a column.
+Delete duplicate rows by the same values in a column.
 
 optional arguments:
   -h, --help            show this help message and exit
